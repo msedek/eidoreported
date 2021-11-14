@@ -1,0 +1,129 @@
+// const nextPage = (nextPage, index, fileNames) => {
+//   return new Promise((resolve, reject) => {
+//     let rest = [];
+//     let subTotalotrosPagos;
+//     let montoPagos = 0;
+//     let fileName = nextPage.fileName;
+//     const workbook = new Excel.Workbook();
+//     workbook.xlsx
+//       .readFile(`./reports/${fileName}`)
+//       .then(async () => {
+//         const number = index + 2;
+//         const name = "Ar" + number;
+//         const nameToSave = "Ar-" + number;
+//         fileNames.push(nameToSave);
+//         const templateSheet = workbook.getWorksheet(`Ar${index + 1}`);
+//         let worksheet = workbook.addWorksheet("Sheet"); //PAGINA
+//         worksheet.model = templateSheet.model;
+//         worksheet.name = name;
+
+//         let row;
+//         let textBoldTrue = {
+//           bold: true
+//         };
+//         //VALORES
+//         worksheet.getCell("H11").font = textBoldTrue;
+//         worksheet.getCell("B11").value = "Tipo de pago";
+//         worksheet.getCell("B11").font = textBoldTrue;
+//         worksheet.getCell("H11").value = "Referencia";
+//         worksheet.getCell("L11").value = "Monto Operacion";
+//         worksheet.getCell("I24").value = "";
+//         worksheet.getCell("I25").value = "";
+//         worksheet.getCell("I26").value = "";
+
+//         let textBold = {
+//           bold: false
+//         };
+
+//         let textAlign = { horizontal: "right" };
+//         let textAlignCenter = { horizontal: "center" };
+
+//         //   ws.getCell('A1').font = {
+//         //     name: 'Comic Sans MS',
+//         //     family: 4,
+//         //     size: 16,
+//         //     underline: true,
+//         //     bold: true
+
+//         // ws.getCell('A1').alignment = { vertical: 'top', horizontal: 'left' };
+
+//         //FORMATO TEXTO
+//         worksheet.getCell("L24").font = textBold;
+//         worksheet.getCell("L25").font = textBold;
+//         worksheet.getCell("B28").font = textBold;
+//         worksheet.getCell("L26").font = textBold;
+//         worksheet.getCell("L28").font = textBold;
+//         worksheet.getCell("L28").alignment = textAlign;
+//         worksheet.getCell("H28").font = textBold;
+//         worksheet.getCell("H23").alignment = textAlignCenter;
+//         worksheet.getCell("H24").alignment = textAlignCenter;
+//         worksheet.getCell("H25").alignment = textAlignCenter;
+//         worksheet.getCell("H26").alignment = textAlignCenter;
+//         worksheet.getCell("H27").alignment = textAlignCenter;
+//         worksheet.getCell("H28").alignment = textAlignCenter;
+//         worksheet.getCell("C28").font = textBold;
+
+//         nextPage.metodosPago.forEach((metodo, index) => {
+//           if (index < 27) {
+//             let cellTipoPago = `B${index + 12}`;
+//             let cellReferencia = `H${index + 12}`;
+//             let cellMonto = `L${index + 12}`;
+//             worksheet.getCell(cellTipoPago).value = metodo.tipoPago;
+//             worksheet.getCell(cellReferencia).value = metodo.referencia;
+//             worksheet.getCell(cellMonto).value = metodo.monto;
+//             montoPagos = montoPagos + metodo.monto;
+//           } else {
+//             rest.push(metodo);
+//           }
+//         });
+
+//         row = worksheet.getRow(41); //SUB-TOTAL OTROS PAGOS
+//         row.getCell(L).value = montoPagos;
+
+//         if (rest.length > 0) {
+//           row = worksheet.getRow(42); //FIN DE TURNO
+//           row.getCell(I).value = "";
+//           row.commit();
+
+//           row = worksheet.getRow(42); //TOTAL CAJA
+//           row.getCell(L).value = "";
+//           row.commit();
+
+//           subTotalotrosPagos = `subTotalotrosPagos${index + 2}`;
+//         } else {
+//           row = worksheet.getRow(42); //TOTAL INGRESO CAJA
+//           row.getCell(J).value = "Total Cierre Caja S/:";
+//           row.commit();
+//           let totalGeneral = 0;
+//           _.mapObject(nextPage, (val, key) => {
+//             if (key.includes("subTotal")) {
+//               totalGeneral = totalGeneral + val;
+//             }
+//           });
+//           totalGeneral = totalGeneral + nextPage.totalEfectivo;
+//           row = worksheet.getRow(42); //TOTAL CAJA
+//           row.getCell(L).value = totalGeneral;
+//           row.commit();
+//         }
+//         workbook.xlsx.writeFile(`./reports/${nameToSave}.xlsx`);
+//         return workbook.xlsx.writeFile(`./reports/${nextPage.fileName}`);
+//       })
+//       .then(() => {
+//         if (rest.length === 0) {
+//           nextPage = {
+//             ...nextPage,
+//             [subTotalotrosPagos]: montoPagos,
+//             metodosPago: rest
+//           };
+//           resolve(nextPage);
+//         } else {
+//           nextPage = {
+//             ...nextPage,
+//             [subTotalotrosPagos]: montoPagos,
+//             metodosPago: rest
+//           };
+//           resolve(nextPage);
+//         }
+//       });
+//   });
+// };

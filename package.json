@@ -1,0 +1,29 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.5",
+    "dateformat": "^3.0.3",
+    "easy-pdf-merge": "^0.2.0",
+    "exceljs": "^1.6.3",
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "moment-timezone": "^0.5.23",
+    "nodemailer": "^4.7.0",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "nodemon": "^1.18.10",
+    "office-converter": "^1.0.2",
+    "pdfkit": "^0.9.0",
+    "underscore": "^1.9.1",
+    "xoauth2": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon app"
+  },
+  "author": "mSedek",
+  "license": "MIT"
+}
