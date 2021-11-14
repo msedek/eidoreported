@@ -2,7 +2,7 @@
 // exports.service = "gmail";
 // exports.host = "smtp.gmail.com";
 // exports.user = "miguelsedek@gmail.com";
-// exports.pass = "uckupliuriopvfdw";
+// exports.pass = "asdasdasdasd";
 // exports.from = "<miguelsedek@gmail.com>";
 
 // exports.endPoint = `http://192.168.1.25:3000/api/`;
@@ -19,22 +19,22 @@
 // exports.service = "gmail";
 // exports.host = "smtp.gmail.com";
 // exports.user = "miguelsedek@gmail.com";
-// exports.pass = "uckupliuriopvfdw";
+// exports.pass = "asdasdasd";
 // exports.from = "<miguelsedek@gmail.com>";
 
-// exports.endPoint = `http://68.183.27.146:3000/api/`;
-// exports.subEndPoint = `68.183.27.146`;
+// exports.endPoint = `http://xxxxxx6:3000/api/`;
+// exports.subEndPoint = `xxxxx6`;
 // exports.mailing = [
 //   //HACER ESTO UN SETTING EN LA BD SETTINGS DE CAJA
-//   "eido.planning@gmail.com",
-//   "georgeconners@hotmail.com"
+//   "easdasdasd@gmail.com",
+//   "asdasd@hotmail.com"
 // ];
 
 //HUAYACHO-----------------------------------------------
 // exports.service = "gmail";
 // exports.host = "smtp.gmail.com";
 // exports.user = "miguelsedek@gmail.com";
-// exports.pass = "uckupliuriopvfdw";
+// exports.pass = "asdasd";
 // exports.from = "<miguelsedek@gmail.com>";
 
 // exports.endPoint = `http://192.168.1.35:3000/api/`
@@ -52,7 +52,7 @@
 // exports.service = "gmail";
 // exports.host = "smtp.gmail.com";
 // exports.user = "miguelsedek@gmail.com";
-// exports.pass = "uckupliuriopvfdw";
+// exports.pass = "asdasdasd";
 // exports.from = "<miguelsedek@gmail.com>";
 
 // exports.endPoint = `http://192.168.1.35:3000/api/`
@@ -60,15 +60,15 @@
 // exports.mailing = [
 //     //HACER ESTO UN SETTING EN LA BD SETTINGS DE CAJA
 //     "miguelsedek@gmail.com",
-//     "rest.piqueotrujillano@hotmail.com",
-//     "noemigamarra50@gmail.com",
+//     "asdasd@hotmail.com",
+//     "asd@gmail.com",
 //   ];
 
 //PIQUEOS-----------------------------------------------
 // exports.service = "gmail";
 // exports.host = "smtp.gmail.com";
 // exports.user = "miguelsedek@gmail.com";
-// exports.pass = "uckupliuriopvfdw";
+// exports.pass = "asdasdasd";
 // exports.from = "<miguelsedek@gmail.com>";
 
 // exports.endPoint = `http://192.168.1.35:3000/api/`
@@ -76,14 +76,14 @@
 // exports.mailing = [
 //     //HACER ESTO UN SETTING EN LA BD SETTINGS DE CAJA
 //     "miguelsedek@gmail.com",
-//     // "sanhonoratodeamiens@gmail.com"
+//     // "asdasd@gmail.com"
 //   ];
 
 //PIZZA-----------------------------------------------
 exports.service = "gmail";
 exports.host = "smtp.gmail.com";
 exports.user = "miguelsedek@gmail.com";
-exports.pass = "uckupliuriopvfdw";
+exports.pass = "asdasdasd";
 exports.from = "<miguelsedek@gmail.com>";
 
 exports.endPoint = `http://192.168.1.35:3000/api/`
@@ -91,5 +91,5 @@ exports.subEndPoint = `192.168.1.35`
 exports.mailing = [
     //HACER ESTO UN SETTING EN LA BD SETTINGS DE CAJA
     "test@test.com",
-    // "sanhonoratodeamiens@gmail.com"
+    // "test@gmail.com"
   ];
